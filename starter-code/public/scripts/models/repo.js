@@ -23,9 +23,9 @@
               language: repo.language,
               created: repo.created_at,
               updated: repo.updated_at,
+              name: repo.name
             }
           });
-        console.log(repos.all);
         callback();
       }).catch(err => console.error);
   }
